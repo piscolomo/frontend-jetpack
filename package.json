@@ -1,0 +1,22 @@
+{
+  "name": "develop",
+  "version": "0.0.0",
+  "description": "Environment of develop for start in apps with Sass and multiples js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Julio Lopez",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-sass": "~0.7.3",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-concat": "~0.4.0",
+    "grunt-contrib-uglify": "~0.4.0",
+    "karma": "~0.12.9",
+    "grunt-karma": "~0.8.2",
+    "karma-jasmine": "~0.1.5",
+    "karma-chrome-launcher": "~0.1.3"
+  }
+}
