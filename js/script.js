@@ -1,5 +1,5 @@
-function multipliytwo(n){
-	return n*2;
+function multiplythree(n){
+	return n*3;
 }
 function Person(name,email){
 	this.name = name;
