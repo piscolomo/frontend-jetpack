@@ -85,7 +85,24 @@ module.exports = function(grunt){
 		      src: 'development_files/style.css',
 		      dest: 'css/style.css'
 		    }
-		  }
+		  },
+		sprite:{
+      all: {
+        src: 'images/sprites/*.png',
+        destImg: 'images/spritesheet.png',
+        destCSS: 'css/sprites.css'
+      }
+    },
+    imagemin: {
+	    dynamic: {                        
+	      files: [{
+	        expand: true,                  
+	        cwd: 'images',                  
+	        src: ['**/*.{png,jpg,gif}'], 
+	        dest: 'images'                 
+	      }]
+	    }
+	  }
 	});
 	grunt.loadNpmTasks("grunt-contrib-sass");
 	grunt.loadNpmTasks("grunt-contrib-jshint");
@@ -97,7 +114,11 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-open');
 	grunt.loadNpmTasks('grunt-karma');
 	grunt.loadNpmTasks('grunt-autoprefixer');
+	grunt.loadNpmTasks('grunt-spritesmith');
+	grunt.loadNpmTasks('grunt-contrib-imagemin');
 
 	grunt.registerTask("default", ["jade","sass","autoprefixer","jshint","concat","uglify","connect","open:dev","watch"]);
+	grunt.registerTask("sprites", "sprite");
+	grunt.registerTask("images", "imagemin");
 	grunt.registerTask("test","karma");
 }
