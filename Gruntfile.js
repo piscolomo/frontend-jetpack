@@ -116,6 +116,7 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-spritesmith');
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
+	grunt.loadNpmTasks('grunt-notify');
 
 	grunt.registerTask("default", ["jade","sass","autoprefixer","jshint","concat","uglify","connect","open:dev","watch"]);
 	grunt.registerTask("sprites", "sprite");

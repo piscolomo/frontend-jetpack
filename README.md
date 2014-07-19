@@ -6,3 +6,5 @@ A gruntfile prepare to watch and compile and minify Sass files, make concat, ugl
 Update jade compiler and livereload
 
 Update spritesmith for create sprite image of .pngs found in /images/sprites/, and imagenmin for optimize all images (images/) without losing quality
+
+Optional install your notification system for notify
