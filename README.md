@@ -16,7 +16,7 @@ Installation
 How to use
 ----------
 
-Run `grunt` and start coding. Your files jade/sass will be compiled and the browser will refresh automatically with livereload. Also your js files have a minifier, and a concat for create one js file to the output. If there is code wrong in your js files, a notification of your SO will appear to warning you.
+Run `grunt` and start coding, go to http://localhost:8000 for see your work. Your files jade/sass will be compiled and the browser will refresh automatically with livereload. Also your js files have a minifier, and a concat for create one js file to the output. If there is code wrong in your js files, a notification of your SO will appear to warning you.
 
 Run `grunt sprites` for create styles and a sprite file using all .pngs in images/sprites/
 
