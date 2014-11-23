@@ -12,5 +12,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "bourbon": "7e6e3f22d14641a787f021e985781bff4edf9627"
+  }
 }
