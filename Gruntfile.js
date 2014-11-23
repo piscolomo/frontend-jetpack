@@ -36,16 +36,16 @@ module.exports = function(grunt){
 			    livereload: true
 			},
 			css: {
-			    files: 'development_files/*.scss',
-			    tasks: ["sass","autoprefixer"]
-			  },
+			  files: 'development_files/**/*.scss',
+			  tasks: ["sass","autoprefixer"]
+			},
 			js: {
-			    files: 'development_files/*.js',
-			    tasks: ["jshint","concat","uglify"]
-			 },
+			 files: 'development_files/**/*.js',
+			 tasks: ["jshint","concat","uglify"]
+			},
 			jade:{
-				files: 'development_files/*.jade',
-			    tasks: ["jade"]
+				files: 'development_files/**/*.jade',
+			  tasks: ["jade"]
 			}
 		},
 		karma:{
