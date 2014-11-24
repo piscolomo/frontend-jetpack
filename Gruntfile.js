@@ -12,7 +12,7 @@ module.exports = function(grunt){
 		},
 		jshint:{
 			beforeconcat: ['development_files/*.js'],
-    		afterconcat: ['js/script.js']
+    	afterconcat: ['js/script.js']
 		},
 		concat:{
 			target:{
@@ -33,15 +33,15 @@ module.exports = function(grunt){
 		},
 		watch:{
 			options: {
-			    livereload: true
+			  livereload: true
 			},
 			css: {
 			  files: 'development_files/**/*.scss',
 			  tasks: ["sass","autoprefixer"]
 			},
 			js: {
-			 files: 'development_files/**/*.js',
-			 tasks: ["jshint","concat","uglify"]
+			  files: 'development_files/**/*.js',
+			  tasks: ["jshint","concat","uglify"]
 			},
 			jade:{
 				files: 'development_files/**/*.jade',
@@ -55,37 +55,37 @@ module.exports = function(grunt){
 		},
 		connect: {
 			server: {
-		      options: {
-		      	hostname: 'localhost',
-		        port: 8000
-		      }
+		    options: {
+		      hostname: 'localhost',
+		      port: 8000
 		    }
+		  }
 		},
 		open: {
-			dev : {
-		      path: 'http://localhost:8000'
-		    }
+			dev: {
+		    path: 'http://localhost:8000'
+		  }
 		},
 		jade: {
 			compile: {
 				options:{
 					pretty: true,
 				},
-	            files: [{
-			      expand: true,
-			      cwd: 'development_files',
-			      src: [ '*.jade' ],
-			      dest: '',
-			      ext: '.html'
-			    }]
+	      files: [{
+			    expand: true,
+			    cwd: 'development_files',
+			    src: [ '*.jade' ],
+			    dest: '',
+			    ext: '.html'
+			  }]
 			}
 		},
 		autoprefixer: {
-		    single_file: {
-		      src: 'development_files/style.css',
-		      dest: 'css/style.css'
-		    }
-		  },
+		  single_file: {
+		    src: 'development_files/style.css',
+		    dest: 'css/style.css'
+		  }
+		},
 		sprite:{
       all: {
         src: 'images/sprites/*.png',
