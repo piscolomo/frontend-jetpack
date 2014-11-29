@@ -1,7 +1,7 @@
 {
-  "name": "grunt-ready",
+  "name": "frontend-jetpack",
   "version": "0.0.0",
-  "homepage": "https://github.com/TheBlasfem/grunt-ready",
+  "homepage": "https://github.com/TheBlasfem/frontend-jetpack",
   "authors": [
     "Julio Lopez <ljuliom@gmail.com>"
   ],
