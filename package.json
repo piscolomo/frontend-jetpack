@@ -1,12 +1,17 @@
 {
-  "name": "develop",
+  "name": "frontend-jetpack",
   "version": "0.0.0",
-  "description": "Environment of develop for start in apps with Sass and multiples js",
+  "description": "A jetpack ready to launch you so high in frontend development",
+  "homepage": "https://github.com/TheBlasfem/frontend-jetpack",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Julio Lopez",
+  "author": {
+    "name": "Julio López Montalvo",
+    "email": "ljuliom@gmail.com",
+    "url": "https://github.com/TheBlasfem"
+  },
   "license": "BSD-2-Clause",
   "devDependencies": {
     "grunt": "~0.4.4",
