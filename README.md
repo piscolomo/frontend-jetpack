@@ -12,6 +12,7 @@ Installation
 4. Clone this git repo `git clone https://github.com/TheBlasfem/frontend-jetpack.git`
 5. Install Grunt `npm install -g grunt-cli`
 6. Install dependencies `npm install` and `bower install`
+
 You can also use our [yeoman generator](https://github.com/TheBlasfem/generator-frontendjetpack)
 
 How to use
